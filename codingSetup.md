@@ -17,4 +17,5 @@ Originally outlined here: https://github.com/gloveboxes/Create-RaspberryPi-dotNE
 
 # Copying files from MacOS to the Raspberry Pi
 `scp <Path to File To Copy> pi@raspberrypi.local:<Path that File will Go>`
+
 Example: scp multipleLogos.gif pi@raspberrypi.local:/home/pi/hat-trick/media
