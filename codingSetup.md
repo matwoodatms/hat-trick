@@ -7,21 +7,6 @@ This provides a good overview to start coding: https://github.com/gloveboxes/Cre
 
 
 # Getting ready for a GUI
-Install a newer version of Python following these steps. I used 3.9.5 as in the sample:
-https://raspberrytips.com/install-latest-python-raspberry-pi/#:~:text=To%20update%20Python%20on%20Raspberry%20Pi%2C%20start%20by,is%20up-to-date%3A%20sudo%20apt%20update%20sudo%20apt%20upgrade
-
-The version of pip in the rpi image wasn't up to snuff to install wxPython. I upgraded it, too:
-`python -m pip install --upgrade pip`
-
-
-Then this should work to install wxPython:
-`pip install -U wxPython`
-
-
-https://wiki.wxpython.org/BuildWxPythonOnRaspberryPi
-
-`sudo apt-get install python-wxgtk2.8`
-
+We're going to use wx to create a GUI python application. To get it, use:
 `sudo apt-get install python-wxtools`
 
-Did these after a WHOLE bunch of flailing, including sudo apt-get update and sudo apt-get upgrade...may have screwed things up for the screen. Need to check...
