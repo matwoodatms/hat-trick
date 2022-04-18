@@ -1,6 +1,8 @@
 # Getting ready for a GUI
 We're going to use wx to create a GUI python application. To get it, use:
+
 `sudo apt-get install python-wxtools`
+
 `sudo apt-get install python-wxgtk-media3.0`
 
 # Developing remotely from MacOS
