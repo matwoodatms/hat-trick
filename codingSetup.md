@@ -5,6 +5,34 @@ We're going to use wx to create a GUI python application. To get it, use:
 
 `sudo apt-get install python-wxgtk-media3.0`
 
+# Getting ready for Bluetooth
+Sadly some combination of all that follow were necessary to get bluetooth working on the RPi.
+`sudo apt-get install bluetooth bluez libbluetooth-dev python-bluez`
+
+`python -m pip install pybluez`
+
+`sudo pip3 install pybluez`
+
+This was definitely necessary to get past the "no advertisable device" error.
+`cd /etc/systemd/system/bluetooth.target.wants/`
+
+`sudo nano bluetooth.service`
+
+On the ExecStart line with bluetoothd add "-C" and save.
+
+`sudo reboot`
+
+`sudo sdptool add SP`
+
+`sudo hcitool dev`
+
+Note the hci value (for me, hci0).
+
+`sudo hciconfig hci0 piscan`
+
+Now the bluetooth .py should run with sudo successfully.
+
+
 # Developing remotely from MacOS
 You can use SSH to administer the Raspberry Pi remotely, which is super helpful if you've connected a tiny 240x240 screen...
 
