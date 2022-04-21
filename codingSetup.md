@@ -32,6 +32,22 @@ Note the hci value (for me, hci0).
 
 Now the bluetooth .py should run with sudo successfully.
 
+Following: https://scribles.net/creating-ble-gatt-server-uart-service-on-raspberry-pi/ (and by extension https://scribles.net/updating-bluez-on-raspberry-pi-from-5-43-to-5-50/)
+
+
+NONE OF THE FOLLOWING WORKED FOR ME, BUT FOR POSTERITY:
+
+Installing gattlib:
+`sudo apt install pkg-config libboost-python-dev libboost-thread-dev libbluetooth-dev libglib2.0-dev python-dev`
+
+`pip install gattlib`
+
+Make sure the device is discoverable with Bluetooth advertising:
+`sudo hciconfig hci0 leadv`
+
+Set up to broadcast:
+`sudo hcitool -i hci0 cmd 0x08 0x0008 1E 02 01 1A 1A FF 4C 00 02 15 [UUID bytes in pairs here, e.g. 00 22, end in 00 00 00 00 C8]`
+
 
 # Developing remotely from MacOS
 You can use SSH to administer the Raspberry Pi remotely, which is super helpful if you've connected a tiny 240x240 screen...
