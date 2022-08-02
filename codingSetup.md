@@ -9,7 +9,9 @@ We're going to use wx to create a GUI python application. To get it, use:
 Because we're using an older version of the OS to support the round screen we don't have access to turn off screen blanking via preferences.
 
 On the device, run:
+
 `xset -dpms`
+
 `xset s off`
 
 This should turn off screen blanking. These values get reset on reboot.
