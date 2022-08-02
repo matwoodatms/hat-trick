@@ -5,6 +5,15 @@ We're going to use wx to create a GUI python application. To get it, use:
 
 `sudo apt-get install python-wxgtk-media3.0`
 
+# Keeping the Raspberry Pi screen on
+Because we're using an older version of the OS to support the round screen we don't have access to turn off screen blanking via preferences.
+
+On the device, run:
+`xset -dpms`
+`xset s off`
+
+This should turn off screen blanking. These values get reset on reboot.
+
 # Getting ready for Bluetooth
 Sadly some combination of all that follow were necessary to get bluetooth working on the RPi.
 `sudo apt-get install bluetooth bluez libbluetooth-dev python-bluez`
