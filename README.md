@@ -7,6 +7,9 @@ Largely based on https://www.instructables.com/Connected-Round-Screen-240x240-GC
 GC9A01 round screen - https://www.amazon.com/gp/product/B08VGT2T42/ref=ppx_yo_dt_b_asin_title_o05_s00?ie=UTF8&psc=1
 Raspberry Pi 3B
 
+## Alternate instructions to try for Raspberry Pi Zero W
+https://www.industrialshields.com/blog/raspberry-pi-for-industry-26/post/1-28-lcd-display-module-raspberry-tutorial-318
+
 ## Raspberry Pi setup
 - Follow https://www.raspberrypi.org/documentation/computers/getting-started.html#setting-up-your-raspberry-pi **but** use a custom image from http://downloads.raspberrypi.org/raspbian/images/raspbian-2019-04-09/ (so we can use fbtft flex).
 - Power on the Raspberry Pi with a keyboard, mouse, monitor.
